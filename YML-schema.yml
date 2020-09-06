@@ -19,60 +19,72 @@ mapping:
   "Commands":
     type: seq
     sequence:
-      "Command":
-        type: str
-        required: yes
-      "Description":
-        type: str
-        required: yes
-      "Usecase":
-        type: str
-        required: yes
-      "Category":
-        type: str
-        required: yes
-      "Privileges":
-        type: str
-        required: yes
-      "MitreID":
-        type: str
-        required: yes
-      "MitreLink":
-        type: str
-        required: yes
-      "OperatingSystem":
-        type: str
-        required: yes
-  "Full_Path":
-    type: seq
-    sequence:
-      "Path":
-        type: str
-        required: yes
-  "Code_Sample":
-    type: seq
-    sequence:
-      "Code":
-        type: str
-        required: yes
-  "Detection":
-    type: seq
-    sequence:
-      "IOC":
-        type: str
-        required: yes
-  "Resources":
-    type: seq
-    sequence:
-      "Link":
-        type: str
-        required: yes
-  "Acknowledgement":
-    type: seq
-    sequence:
-      "Person":
-        type: str
-        required: yes
-      "Handle":
-        type: str
-        required: yes
+      - type: map
+        mapping:
+          "Command":
+            type: str
+            required: yes
+          "Description":
+            type: str
+            required: yes
+          "Usecase":
+            type: str
+            required: yes
+          "Category":
+            type: str
+            required: yes
+          "Privileges":
+            type: str
+            required: yes
+          "MitreID":
+            type: str
+            required: yes
+          "MitreLink":
+            type: str
+            required: yes
+          "OperatingSystem":
+            type: str
+            required: yes
+      "Full_Path":
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              "Path":
+                type: str
+                required: yes
+      "Code_Sample":
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              "Code":
+                type: str
+                required: yes
+      "Detection":
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              "IOC":
+                type: str
+                required: yes
+      "Resources":
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              "Link":
+                type: str
+                required: yes
+      "Acknowledgement":
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              "Person":
+                type: str
+                required: yes
+              "Handle":
+                type: str
+                required: yes
