@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: yaml-lint
-        uses: eliezio/action-pykwalify@v1.7.0
+        uses: eliezio/action-pykwalify@v0.3
         with:
           files: yml/.
           schema: YML-schema.yml
