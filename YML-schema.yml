@@ -1,0 +1,27 @@
+---
+Id: string
+Name: string
+Description: string
+Author: string
+Created: string
+Commands:
+  - Command: string
+    Description: string
+    Usecase: string
+    Category: string
+    Privileges: Required privs
+    MitreID: string
+    MitreLink: string
+    OperatingSystem: string
+Full_Path:
+  - Path: string
+Code_Sample: 
+  - Code: string
+Detection: 
+  - IOC: string
+Resources:
+  - Link: string
+Acknowledgement:
+  - Person: string
+    Handle: string
+---
