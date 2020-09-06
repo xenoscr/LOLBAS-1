@@ -45,46 +45,46 @@ mapping:
           "OperatingSystem":
             type: str
             required: yes
-      "Full_Path":
-        type: seq
-        sequence:
-          - type: map
-            mapping:
-              "Path":
-                type: str
-                required: yes
-      "Code_Sample":
-        type: seq
-        sequence:
-          - type: map
-            mapping:
-              "Code":
-                type: str
-                required: yes
-      "Detection":
-        type: seq
-        sequence:
-          - type: map
-            mapping:
-              "IOC":
-                type: str
-                required: yes
-      "Resources":
-        type: seq
-        sequence:
-          - type: map
-            mapping:
-              "Link":
-                type: str
-                required: yes
-      "Acknowledgement":
-        type: seq
-        sequence:
-          - type: map
-            mapping:
-              "Person":
-                type: str
-                required: yes
-              "Handle":
-                type: str
-                required: yes
+  "Full_Path":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "Path":
+            type: str
+            required: yes
+  "Code_Sample":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "Code":
+            type: str
+            required: yes
+  "Detection":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "IOC":
+            type: str
+            required: yes
+  "Resources":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "Link":
+            type: str
+            required: yes
+  "Acknowledgement":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "Person":
+            type: str
+            required: yes
+          "Handle":
+            type: str
+            required: yes
