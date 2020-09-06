@@ -22,7 +22,7 @@ Detection:
   - IOC: C:\Windows\System32\Tasks\At1 (substitute 1 with subsequent number of at job)
   - IOC: C:\Windows\Tasks\At1.job
   - IOC: Registry Key - Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\At1.
-Code_Sampe:
+Code_Sample:
 Resources:
   - Link: https://freddiebarrsmith.com/at.txt
   - Link: https://sushant747.gitbooks.io/total-oscp-guide/privilege_escalation_windows.html - Escalate to System from Administrator
