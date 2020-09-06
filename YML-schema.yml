@@ -56,6 +56,7 @@ mapping:
             required: yes
   "Code_Sample":
     type: seq
+    required: yes
     sequence:
       - type: map
         required: yes
