@@ -4,6 +4,7 @@ mapping:
   "Id":
     type: str
     required: yes
+    pattern: [a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}
   "Name":
     type: str
     required: yes
