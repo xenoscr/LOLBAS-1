@@ -1,26 +1,78 @@
 ---
-Id: str
-Name: str
-Description: str
-Author: str
-Created: str
-Commands:
-  - Command: str
-    Description: str
-    Usecase: str
-    Category: str
-    Privileges: str
-    MitreID: str
-    MitreLink: str
-    OperatingSystem: str
-Full_Path:
-  - Path: str
-Code_Sample: 
-  - Code: str
-Detection: 
-  - IOC: str
-Resources:
-  - Link: str
-Acknowledgement:
-  - Person: str
-    Handle: str
+type: map
+  mapping:
+    "Id":
+      type: str
+      required: yes
+    "Name":
+      type: str
+      required: yes
+    "Description":
+      type: str
+      required: yes
+    "Author":
+      type: str
+      required: yes
+    "Created":
+      type: str
+      required: yes
+    "Commands":
+      type: seq
+      sequence:
+        "Command":
+          type: str
+          required: yes
+        "Description":
+          type: str
+          required: yes
+        "Usecase":
+          type: str
+          required: yes
+        "Category":
+          type: str
+          required: yes
+        "Privileges":
+          type: str
+          required: yes
+        "MitreID":
+          type: str
+          required: yes
+        "MitreLink":
+          type: str
+          required: yes
+        "OperatingSystem":
+          type: str
+          required: yes
+    "Full_Path":
+      type: seq
+      sequence:
+        "Path":
+          type: str
+          required: yes
+    "Code_Sample":
+      type: seq
+      sequence:
+        "Code":
+          type: str
+          required: yes
+    "Detection":
+      type: seq
+      sequence:
+        "IOC":
+          type: str
+          required: yes
+    "Resources":
+      type: seq
+      sequence:
+        "Link":
+          type: str
+          required: yes
+    "Acknowledgement":
+      type: seq
+      sequence:
+        "Person":
+          type: str
+          required: yes
+        "Handle":
+          type: str
+          required: yes
