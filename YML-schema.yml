@@ -59,7 +59,6 @@ mapping:
     required: yes
     sequence:
       - type: map
-        required: yes
         mapping:
           "Code":
             type: str
