@@ -25,7 +25,7 @@ jobs:
       - name: yaml-lint
         uses: eliezio/action-pykwalify@v0.3
         with:
-          files: yml/.
+          files: yml/**/*.yml
           schema: YML-schema.yml
     
     # Important: This sets up your GITHUB_WORKSPACE environment variable
