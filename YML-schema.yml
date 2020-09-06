@@ -47,6 +47,7 @@ mapping:
             required: yes
   "Full_Path":
     type: seq
+    required: yes
     sequence:
       - type: map
         mapping:
@@ -55,36 +56,36 @@ mapping:
             required: yes
   "Code_Sample":
     type: seq
+    required: yes
     sequence:
       - type: map
+        required: yes
         mapping:
           "Code":
             type: str
-            required: yes
   "Detection":
     type: seq
+    required: yes
     sequence:
       - type: map
         mapping:
           "IOC":
             type: str
-            required: yes
   "Resources":
     type: seq
+    required: yes
     sequence:
       - type: map
         mapping:
           "Link":
             type: str
-            required: yes
   "Acknowledgement":
     type: seq
+    required: yes
     sequence:
       - type: map
         mapping:
           "Person":
             type: str
-            required: yes
           "Handle":
             type: str
-            required: yes
